@@ -21,8 +21,9 @@
 HuePalette is a sleek and intuitive web application designed for creatives, developers, and designers to effortlessly create, save, and export beautiful color palettes. Whether you need a random burst of inspiration or want to build a harmonious scheme around a specific brand color, HuePalette provides the tools to get the job done quickly and beautifully.
 <a id="live-demo">🚀 Live Demo</a>
 You can check out the live version of the project here:
-https://your-live-demo-link.com (<- Add your deployment link here!)
+[https://your-live-demo-link.com](https://pratiikkk-kumar.github.io/huepalette/)
 <a id="features">✨ Key Features</a>
+<br>
 🎨 Instant Palette Generation: Create stunning, harmonious color palettes with a single click of the "Generate Random" button.
 👁️ Generate from Primary Color: Use the color picker or enter a HEX code to generate a complete palette based on your chosen primary color.
 💾 Save to Local Storage: Love a palette? Save it with one click! Your favorite palettes are stored directly in your browser for future use.
@@ -32,7 +33,7 @@ https://your-live-demo-link.com (<- Add your deployment link here!)
 <a id="how-to-use">🛠️ How To Use</a>
 To get a local copy up and running, follow these simple steps.
 Clone the repository:
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/pratiikkk-kumar/huepalette
 
 
 Navigate to the project directory:
