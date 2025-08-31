@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HuePalette | Design start with the right hue</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="Images/main-logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="logo-icon">
+            <img
+              src="Images/main-logo.png"
+              alt="HuePalette Logo"
+              class="logo-image"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>HuePalette</h1>
+            <p>Design start with the right hue</p>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="generate.html">Generate</a>
+        </div>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="generate.html">Generate</a>
+      </div>
+
+      <main class="hero-section">
+        <div class="hero-content">
+          <h1>Create Beautiful Color Palettes</h1>
+          <p>
+            Generate harmonious color schemes with a single click or from your
+            primary color. Perfect for designers, developers, and creatives.
+          </p>
+          <a href="generate.html" class="btn btn-primary">
+            <i class="fas fa-palette"></i> Generate Palette
+          </a>
+        </div>
+
+        <div class="color-carousel-container">
+          <div class="color-carousel"></div>
+        </div>
+      </main>
+
+      <section class="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3>Instant Generation</h3>
+          <p>Create beautiful color palettes with a single click</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-eye-dropper"></i>
+          </div>
+          <h3>Custom Colors</h3>
+          <p>Start with your brand color and find perfect matches</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-save"></i>
+          </div>
+          <h3>Save & Export</h3>
+          <p>Save your favorite palettes and export as CSS variables</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-copyright">
+          <p>
+            &copy; <span id="currentYear"></span> HuePalette by
+            <b>Pratik Kumar</b> | Design Start with the Right Hue
+          </p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com/in/pratikkumarsethi"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/pratiikkk-kumar"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://instagram.com/_.pratiikkk._"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

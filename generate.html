@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HuePalette | Design start with the right hue</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="Images/main-logo.png" />
+  </head>
+  <body>
+    <div class="notification" id="notification">
+      <i class="fas fa-check-circle"></i> Color Copied to Clipboard!
+    </div>
+
+    <div class="container">
+      <header>
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img
+              src="Images/main-logo.png"
+              alt="HuePalette Logo"
+              class="logo-image"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>HuePalette</h1>
+            <p>Design start with the right hue</p>
+          </div>
+        </a>
+      </header>
+
+      <div class="main-content">
+        <main class="content">
+          <div class="color-focus-area">
+            <div class="focal-header">
+              <h2>Create Beautiful Color Palettes</h2>
+              <p>
+                Generate harmonious color schemes with a single click or from
+                your primary color
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="actions">
+                <button
+                  class="btn btn-primary"
+                  id="generateRandom"
+                  aria-label="Generate random color palette"
+                >
+                  <i class="fas fa-random"></i> Generate Random
+                </button>
+                <button
+                  class="btn btn-outline"
+                  id="generateFromColor"
+                  aria-label="Generate palette from primary color"
+                >
+                  <i class="fas fa-eyedropper"></i> Use Color
+                </button>
+              </div>
+
+              <div class="color-picker-container">
+                <div class="color-preview" id="colorPreview"></div>
+                <div class="color-input">
+                  <input
+                    type="text"
+                    id="colorInput"
+                    placeholder="Enter hex color (e.g. #6A5ACD)"
+                    value="#6A5ACD"
+                    aria-label="Color input"
+                  />
+                  <input
+                    type="color"
+                    id="colorPicker"
+                    value="#6A5ACD"
+                    aria-label="Color picker"
+                  />
+                </div>
+              </div>
+
+              <div class="palette-display" id="paletteDisplay"></div>
+
+              <div class="palette-actions">
+                <button class="btn btn-outline" id="savePalette">
+                  <i class="fas fa-heart"></i> Save
+                </button>
+                <button class="btn btn-outline" id="exportPalette">
+                  <i class="fas fa-download"></i> Export
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card saved-palettes-section">
+            <div class="card-header">
+              <h2>Saved Palettes</h2>
+              <p>Your favorite color combinations</p>
+            </div>
+            <div id="savedPalettes" class="saved-palettes"></div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>How to Use</h2>
+            </div>
+            <p>1. Click "Generate Random" for a new palette</p>
+            <p>2. Or pick your color and click "Use Color"</p>
+            <p>3. Click on any color to copy its value</p>
+            <p>4. Save your favorite palettes</p>
+            <p style="margin-top: 15px; color: var(--accent-color)">
+              <i class="fas fa-lightbulb"></i> Pro tip: Use the color picker for
+              precise selection!
+            </p>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <div class="footer-copyright">
+          <p>
+            &copy; <span id="currentYear"></span> HuePalette by
+            <b>Pratik Kumar</b> | Design Start with the Right Hue
+          </p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com/in/pratikkumarsethi"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/pratiikkk-kumar"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://instagram.com/_.pratiikkk._"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
